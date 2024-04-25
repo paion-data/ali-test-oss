@@ -1,0 +1,52 @@
+@options
+@packages
+-classpath
+'/Users/jackjack/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/jackjack/.m2/repository/com/fasterxml/jackson/jackson-bom/2.13.3/jackson-bom-2.13.3.pom:/Users/jackjack/.m2/repository/org/spockframework/spock-bom/2.4-M1-groovy-4.0/spock-bom-2.4-M1-groovy-4.0.pom:/Users/jackjack/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/jackjack/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/jackjack/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'/Users/jackjack/Desktop/github/paion-data/ali-test-oss/src/main/java:/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs'
+-docencoding
+'UTF-8'
+-Xdoclint:none
+-doctitle
+'ali-test-oss 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'ali-test-oss 1.0-SNAPSHOT API'
+com.paiondata
+/Users/jackjack/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar = 1693267822797
+/Users/jackjack/.m2/repository/com/fasterxml/jackson/jackson-bom/2.13.3/jackson-bom-2.13.3.pom = 1712043911378
+/Users/jackjack/.m2/repository/org/spockframework/spock-bom/2.4-M1-groovy-4.0/spock-bom-2.4-M1-groovy-4.0.pom = 1693267708807
+/Users/jackjack/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar = 1693267827491
+/Users/jackjack/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar = 1693267827132
+/Users/jackjack/.m2/repository/net/bytebuddy/byte-buddy/1.14.11/byte-buddy-1.14.11.jar = 1703114967000
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/src/main/java = 1714015322824
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/generated-sources/annotations = 1714016416804
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/tag-search-index.js = 1714016419041
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/overview-tree.html = 1714016419029
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/module-search-index.js = 1714016419039
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/index.html = 1714016419048
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/package-search-index.js = 1714016419040
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/jquery-ui.overrides.css = 1714016419059
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/index-all.html = 1714016419047
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/allpackages-index.html = 1714016419039
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/member-search-index.js = 1714016419041
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/script.js = 1714016419055
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/stylesheet.css = 1714016419054
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/help-doc.html = 1714016419052
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/element-list = 1714016419008
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/allclasses-index.html = 1714016419037
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/type-search-index.js = 1714016419040
+/Users/jackjack/Desktop/github/paion-data/ali-test-oss/target/apidocs/search.js = 1714016419056

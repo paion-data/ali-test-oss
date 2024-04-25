@@ -10,6 +10,28 @@
 
     <name>ali-test-oss</name>
     <url>https://github.com/paion-data/ali-test-oss</url>
+    <description>An Ali OSS client for testing</description>
+
+    <developers>
+        <developer>
+            <name>Paion Data</name>
+            <url>https://github.com/paion-data</url>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <developerConnection>scm:git:ssh://git@github.com/paion-data/ali-test-oss.git</developerConnection>
+        <url>https://github.com/paion-data/ali-test-oss.git</url>
+        <tag>HEAD</tag>
+    </scm>
 
     <properties>
         <checkstyle.skip>false</checkstyle.skip>

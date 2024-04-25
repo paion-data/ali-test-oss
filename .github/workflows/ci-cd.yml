@@ -20,6 +20,14 @@ name: CI/CD
     branches:
       - master
 
+<<<<<<< HEAD
+=======
+env:
+  USER: QubitPi
+  EMAIL: jack20220723@gmail.com
+  DOCKERHUB_USERNAME: paiondata
+
+>>>>>>> 42e9dbe (Customization)
 jobs:
   yaml-lint:
     name: YAML Style Check

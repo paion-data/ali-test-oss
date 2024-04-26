@@ -204,7 +204,7 @@ import java.util.Objects;
 /**
  * The Ali OSS client used for the test.
  * <p>
- * end.
+ * Use in-memory storage to implement object storage instead of Ali OSS.
  */
 public class TestOSSClient implements OSS {
 

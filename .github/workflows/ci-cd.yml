@@ -44,8 +44,8 @@ jobs:
       - name: Release
         uses: paion-data/maven-central-release-action@master
         with:
-          user: QubitPi
-          email: jack20220723@gmail.com
+          user: A-Little-Excited
+          email: 3030036858@qq.com
           gpg-keyname: ${{ secrets.GPG_KEYNAME }}
           gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY }}
           gpg-passphrase: ${{ secrets.GPG_PASSPHRASE }}

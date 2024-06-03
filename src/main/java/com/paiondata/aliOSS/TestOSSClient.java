@@ -192,14 +192,19 @@ import com.aliyun.oss.model.VoidResult;
 import com.aliyun.oss.model.VpcPolicy;
 import com.aliyun.oss.model.Vpcip;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * The Ali OSS client used for the test.
@@ -207,8 +212,9 @@ import java.util.Objects;
  * Use in-memory storage to implement object storage instead of Ali OSS.
  */
 public class TestOSSClient implements OSS {
+    private static final Logger LOG = LoggerFactory.getLogger(TestOSSClient.class);
 
-    private final Map<String, InputStream> map = new HashMap<>();
+    private final Map<String, byte[]> map = new ConcurrentHashMap<>();
 
     @Override
     public PutObjectResult putObject(final String bucketName, final String key, final InputStream input)
@@ -217,7 +223,20 @@ public class TestOSSClient implements OSS {
         Objects.requireNonNull(key);
         Objects.requireNonNull(input);
 
-        map.put(key, input);
+        final byte[] content;
+        try {
+            content = input.readAllBytes();
+            input.close();
+        } catch (final IOException exception) {
+            final String message = String.format(
+                    "Failed or interrupted I/O operations in '%s'",
+                    TestOSSClient.class.getName()
+            );
+            LOG.error(message, exception);
+            throw new IllegalStateException(message, exception);
+        }
+
+        map.put(key, content);
         return null;
     }
 
@@ -226,7 +245,8 @@ public class TestOSSClient implements OSS {
         Objects.requireNonNull(key);
         Objects.requireNonNull(bucketName);
 
-        final InputStream fileContent = map.get(key);
+        final byte[] content = map.get(key);
+        final InputStream fileContent = new ByteArrayInputStream(content);
 
         final OSSObject ossObject = new OSSObject();
         ossObject.setObjectContent(fileContent);

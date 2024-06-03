@@ -16,7 +16,7 @@ class TestOSSClientSpec extends Specification{
 
         then: "download file by using TestOSSClient and test the file content"
         InputStream actualInputStream = testOSSClient.getObject(BUCKET_NAME, FILE_ID).getObjectContent()
-        expectInputStream == actualInputStream
+        "test" == actualInputStream.getText()
 
         cleanup:
         expectInputStream.close()

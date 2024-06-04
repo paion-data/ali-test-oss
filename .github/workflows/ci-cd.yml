@@ -22,7 +22,7 @@ name: CI/CD
 
 jobs:
   yml-md-style-and-link-checks:
-    uses: paion-data/github-actions-core/.github/workflows/yml-md-style-and-link-checks.yml@master
+    uses: paion-data/ci-cd-core/.github/workflows/yml-md-style-and-link-checks.yml@master
 
   tests:
     name: Unit & Integration Tests
